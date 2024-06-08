@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crear nueva playlist</ion-title>
+    <div class="button">
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()" shape="round" fill="clear">X</ion-button>
+    </ion-buttons>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-item>
+    <ion-label position="floating">Nombre de la playlist</ion-label>
+    <ion-input [(ngModel)]="playlistName"></ion-input>
+  </ion-item>
+  <br>
+  <div class="button-container">
+  <ion-button (click)="createPlaylist()" shape="round" class="createButton">Crear</ion-button>
+</div>
+</ion-content>

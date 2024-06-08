@@ -1,0 +1,31 @@
+<ion-content>
+  <div class="profile-header">
+    <div class="profile-picture">
+      <img src="assets/img/profile-picture.jpg" alt="Foto de perfil">
+    </div>
+    <div class="profile-info">
+      <h2>Nombre de Usuario</h2>
+      <ion-button size="small" shape="round" class="button">Cambiar foto</ion-button>
+      <div class="followers-info">
+        <span><strong>{{playlists.length}}</strong> PLAYLISTS</span>
+        <span><strong>13</strong> SEGUIDORES</span>
+        <span><strong>123</strong> SIGUIENDO</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="playlists-section">
+    <h3>Playlists</h3>
+    <ion-list>
+      <ion-item *ngFor="let playlist of playlists">
+        <ion-thumbnail slot="start">
+          <img src="assets/img/playlist-icon.png">
+        </ion-thumbnail>
+        <ion-label>
+          {{ playlist.name }}
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="full" (click)="openNewPlaylistModal()" shape="round" fill="clear">Crear Playlist +</ion-button>
+  </div>
+</ion-content>

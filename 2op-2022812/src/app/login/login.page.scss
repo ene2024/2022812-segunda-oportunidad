@@ -1,0 +1,31 @@
+ion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .register-link {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ion-text-color);
+  }
+  
+  .register-link ion-button {
+    --padding-start: 0;
+    --padding-end: 0;
+    --background: none;
+    --color: var(--ion-color-primary);
+  }
+
+  ion-item{
+    --background: #7a7a7a;
+    border-radius: 10px;
+  }

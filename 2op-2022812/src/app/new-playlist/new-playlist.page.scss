@@ -1,0 +1,24 @@
+.button ion-button{
+    --background: none;
+    --color: white;
+}
+
+ion-toolbar{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.createButton{
+    --color: black;
+    display: block; /* Convertir en elemento de bloque */
+    margin: 20px auto; /* Centrar horizontalmente */
+    text-align: center; /* Asegurar que el texto está centrado */
+    width: 20%;
+    font-weight: bold;
+}
+
+ion-item{
+    --background: #7a7a7a;
+    border-radius: 20px;
+    font-size: 0.9em;
+  }

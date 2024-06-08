@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crear una cuenta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="register()" #registerForm="ngForm">
+    <ion-item lines="none">
+      <ion-label position="floating">Correo Electrónico</ion-label>
+      <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+    </ion-item>
+    <br>
+    <ion-item lines="none">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+    </ion-item>
+    <br>
+    <ion-button expand="full" type="submit" [disabled]="!registerForm.form.valid" shape="round">Siguiente</ion-button>
+    <br>
+  </form>
+  <div class="login-link">
+    <span>¿Ya tienes una cuenta?</span>
+    <ion-button fill="clear" (click)="goToLogin()">Inicia sesión</ion-button>
+  </div>
+</ion-content>

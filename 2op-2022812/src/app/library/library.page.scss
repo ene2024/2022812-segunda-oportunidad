@@ -1,0 +1,75 @@
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(180deg, #ca1111 0%, transparent 100%);
+    color: white;
+    margin-bottom: 3px;
+  }
+
+  .button ion-button{
+    background-color: gray;
+    color: white;
+  }
+  
+  .profile-picture {
+    margin-right: 16px;
+  }
+  
+  .profile-picture img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .profile-info {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .profile-info h2 {
+    margin: 0 0 8px;
+    font-size: 1.5em;
+  }
+  
+  .profile-info ion-button {
+    margin: 8px 0;
+    --background: rgb(52, 52, 52);
+    --color: white;
+  }
+  
+  .followers-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    gap: 6px;
+  }
+  
+  .playlists-section {
+    padding: 16px;
+    background-color: transparent;
+  }
+  
+  .playlists-section h3 {
+    margin-bottom: 16px;
+    font-size: 1.2em;
+    background-color: transparent;
+    color: white;
+  }
+  
+  ion-list {
+    margin-bottom: 16px;
+  }
+  
+  ion-thumbnail img {
+    width: 50px;
+    height: 50px;
+  }
+
+ ion-button {
+    --padding-start: 0;
+    --padding-end: 0;
+    --background: none;
+    --color: var(--ion-color-primary);
+    font-size: 1em;
+  }
